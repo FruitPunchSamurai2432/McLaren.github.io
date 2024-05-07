@@ -1,0 +1,202 @@
+<?php
+$conn = new PDO('mysql:host=mclaren;dbname=mclaren', 'root', '');
+$stmt = $conn->query("select * from users");
+?>
+
+
+<!DOCTYPE html>
+<html lang="ru">
+
+
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>McLaren Main</title>
+<link rel="shortcut icon" type="image/x-icon" href=>
+
+<link href="css/style.css" type="text/css" data-template-style="true" rel="stylesheet"/>
+
+
+</head>
+
+
+
+<header id="header">
+
+<a href="index.html" class="site-logo"><img src="img/McLaren Logo.jpg" alt="Лого"></a>
+
+<div class="main">
+
+<div class="top">
+<div class="phone">
+<span class="label">Звонок по России бесплатный</span>
+<a href=>8-000-000-00-00</a>
+</div>
+<a class="icon-link email modal-trigger" href="contactwithus.html"><span>Написать нам</span></a>
+</div>
+
+<div class="bottom">
+<a class="menu-trigger"><span>Меню</span></a>
+<ul class="main-menu">
+
+<li class="parent">
+<a href=>Модельный ряд</a>
+<span class="submenu-trigger"></span>
+<ul class="submenu">
+
+<li class="label">Полный привод</li>
+<li><a href="720s.html">McLaren 720s</a></li>
+<li><a href="p1.html">McLaren P1</a></li>
+<li><a href="elva.html">McLaren ELVA</a></li>
+<li><a href="650s.html">McLaren 650s</a></li>
+
+<li class="label">Неполный привод</li>
+<li><a href="senna.html">McLaren Senna</a></li>
+<li><a href="speedtrail.html">McLaren SpeedTrail</a></li>
+</ul>
+</li>
+
+<li class="parent">
+<a href=>О компании</a>
+<span class="submenu-trigger"></span>
+<ul class="submenu">
+<li><a href="history.html">История</a></li>
+</ul>
+</li>
+
+
+
+</ul>
+</div>
+</div>
+</header>
+
+
+
+<div style="padding-bottom:1rem;" id="dealers-coop" class="page-section">
+
+<div class="container intro">
+<img src="">
+<div class="text">
+<h2>Приглашаем вас на бесплатный тестдарайв</h2>
+<p>Основной целью формирования и развития сервисно-сбытовой сети «McLaren» является обеспечение продвижения продукции к потенциальным потребителям, увеличение числа потребителей продукции и предоставление потребителям полного комплекса услуг включая как продажу автомобилей, продажу запасных частей, так техническое обслуживание, ремонт и восстановление продукции. Дилерская сеть формируется на принципах долгосрочного, взаимовыгодного сотрудничества и партнерства.</p>
+</div>
+</div>
+
+
+
+<div class="container narrow contact">
+<h3 class="top-gap">По самым разным вопросам обращаться:</h3>
+<div class="person-contacts">
+<h3 class="header">Савельев Никита Антонович</h3>
+<ul>
+<li class="position">Начальник отдела обратной связи<br>
+ООО «McLaren»</li>
+<li class="phone"><a href="tel:+73513262236">+7 (000) 000-00-00</a><br>
+<a href="tel:+73513553700">+7 (000) 000-00-00</a></li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div class="container">
+<div class="text-center"><h1>Написать нам</h1></div>
+
+
+
+<form method="post" action="add_user.php">
+
+<input placeholder="Имя и Фамилия *" type="text" id="fullname" name="fullname" required><br>
+
+<input placeholder="E-mail *" type="email" id="email" name="email" required><br>
+
+<textarea placeholder="Комментарий *" id="comment" name="comment" required></textarea><br>
+
+<div class="form__row form__row_submit">
+<div class="form__item form__item_p-100">
+<div class="form__send">
+
+<input type="submit" value="Отправить">
+
+</div>
+</div>
+</div>
+
+<div class="required-note">Все поля отмеченные знаком “<span>*</span>” - обязательны для заполнения</div>
+
+</form>
+
+
+
+<br>
+	
+</div>
+</div>	
+
+
+
+
+ 
+<footer id="footer" class="">
+
+<div class="container">
+
+<ul class="menu">
+
+<li class="parent">
+<span class="submenu-trigger"></span>
+<ul class="submenu">
+<li><a href="720s.html">McLaren 720s</a></li>
+<li><a href="p1.html">McLaren P1</a></li>
+<li><a href="elva.html">McLaren ELVA</a></li>
+<li><a href="650s.html">McLaren 650s</a></li>
+<li><a href="senna.html">McLaren Senna</a></li>
+<li><a href="speedtrail.html">McLaren SpeedTrail</a></li>
+</ul>
+</li>
+
+<li><a href="history.html">О компании</a></li>
+<li><a href="contactwithus.html">Контакты</a></li>
+</ul>
+
+<div class="about">
+<a href="index.html" class="site-logo"><img src="img/McLaren Logo.jpg"><span>Автомобильный завод «McLaren» - производство спортивных автомобилей</span></a>
+<div class="d-copyright d-desktop">Официальный сайт Автомобильного&nbsp;завода&nbsp;"McLaren" ©&nbsp;2024</div>
+</div>
+
+<div class="contacts">
+<div class="addr phone">
+<div class="label">111111, Московская&nbsp;обл., г.&nbsp;Лобня, пр.&nbsp;Автомир,&nbsp;4</div>
+</div>
+<div class="phone">
+<div class="label">Круглосуточный бесплатный звонок по России</div>
+<a class="phone__phone" href=>8-000-000-00-00</a>
+</div>
+<div class="phone">
+<div class="label">E-mail:</div>
+<a class="phone__mail" href=>McLaren@gmail.com</a>
+</div>
+<ul class="social-networks">
+<li><a href="" class="vkontakte" target="_blank"></a></li>
+<li><a href="" class="odnok" target="_blank"></a></li>
+</ul>	
+</div>
+
+<div class="copyright d-mobile">Официальный сайт Автомобильного&nbsp;завода&nbsp;"McLaren" ©&nbsp;2024</div>
+<div class="copyright mt-30-1 d-desktop"><a href="" target="_blank" nofollow>Создание сайта — Савельев Н.</a></div>
+
+<div class="links">
+<a target="_blank" class="links__first" href=>Политика в отношении обработки персональных&nbsp;данных</a>
+<a target="_blank" class="links__second" href=>Пользовательское соглашение</a>			
+</div>
+
+<div class="copyright mt-30-1 d-mobile"><a href="" target="_blank" nofollow>Создание сайта — Савельев Н.</a></div>
+
+</div>
+</footer>
+
+</body>
+</html>
